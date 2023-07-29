@@ -75,6 +75,7 @@ a:hover {
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 
 .hamburger-icon {
@@ -84,13 +85,15 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hamburger-icon span {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3 ease-in-out;
+  /* transition: all 0.3 ease-in-out; */
+  transition: background-color 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -101,7 +104,11 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: max-height 0.3s ease-in-out;
+
+  /* transition: all 0.3 ease-in-out; */
 }
 
 .menu-links a {
@@ -111,7 +118,9 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  /* transition: all 0.3 ease-in-out; */
+
+  transition: color 0.3s ease-in-out;
 }
 
 .menu-links li {
@@ -120,6 +129,8 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hamburger-icon.open span:first-child {
@@ -132,6 +143,11 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.menu-links a:hover {
+  background-color: #f1f1f1;
+  color: #555;
 }
 
 .hamburger-icon span:first-child {
@@ -172,13 +188,6 @@ section {
 
 /* .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-} */
-
-.section__pic-container {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 600px; 
@@ -188,7 +197,36 @@ section {
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+} */
+
+.section__pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 600px;
+  max-width: 100%; 
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+.section__pic-container-home {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* .section__pic-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+} */
 
 .section__pic-container img {
   width: 100%;
@@ -199,9 +237,13 @@ section {
   transition: transform 0.3s ease;
 }
 
-/* .section__pic-container:hover img { */
-  /* transform: scale(1.2) rotate(-8deg); */
-/* } */
+@media (max-width: 600px) {
+  .section__pic-container {
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    width: 100%; /* Ocupará todo el ancho disponible */
+    max-width: 300px; /* Limita el ancho máximo para evitar que se estire demasiado */
+  }
+}
 
 
 
@@ -214,9 +256,55 @@ section {
   font-weight: 600;
 }
 
+
+
 .section__text__p1 {
+  font-size: 1.4rem; /* Tamaño de fuente reducido para letras más pequeñas */
+  line-height: 1.6; /* Aumentar el interlineado para una mejor legibilidad */
   text-align: center;
+  color: #555; /* Cambiar el color del texto a un tono más oscuro */
+  margin-bottom: 20px; /* Agregar espacio inferior para separar de otros elementos */
 }
+
+.section__text__p1 {
+  max-width: 800px; /* Definir un ancho máximo para el texto */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Estilos base para todas las pantallas */
+.section__text__p1-about {
+  font-size: 1.4rem;
+  line-height: 2.6;
+  text-align: center;
+  color: #555;
+  margin-bottom: 100px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .section__text__p1-about {
+    font-size: 3rem; /* Reducir el tamaño de fuente para pantallas más pequeñas */
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 1200px) {
+  .section__text__p1-about {
+    max-width: 1000px; /* Aumentar el ancho máximo para pantallas más grandes */
+  }
+}
+
+
+
+
+
+
+
 
 .section__text__p2 {
   font-size: 4.75rem;
@@ -227,6 +315,61 @@ section {
   font-size: 4.6rem;
   text-align: center;
 }
+
+
+
+
+/* Estilos base para todas las pantallas */
+.title-about {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Opcionalmente, agregar un estilo de subrayado debajo del título */
+.title-about::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 8px auto; /* Centrar el subrayado debajo del título */
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .title-about {
+    font-size: 3rem; /* Reducir el tamaño de fuente para pantallas más pequeñas */
+  }
+
+  /* Ajustar el subrayado para pantallas más pequeñas si lo deseas */
+  .title-about::after {
+    width: 30px;
+    height: 121px;
+    margin: 66px auto; /* Ajustar el margen inferior del subrayado para pantallas más pequeñas */
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 1200px) {
+  .title-about {
+    font-size: 3.5rem; /* Aumentar el tamaño de fuente para pantallas más grandes */
+  }
+
+  /* Ajustar el subrayado para pantallas más grandes si lo deseas */
+  .title-about::after {
+    width: 70px;
+    height: 3px;
+    margin: 10px auto; /* Ajustar el margen inferior del subrayado para pantallas más grandes */
+  }
+}
+
+
+
+
+
 
 #socials-container {
   display: flex;
@@ -240,10 +383,30 @@ section {
 
 /* ICONS */
 
+/* .icon {
+  cursor: pointer;
+  height: 2rem;
+} */
+
+
+/* Estilos base para los iconos */
 .icon {
   cursor: pointer;
   height: 2rem;
+  transition: transform 0.3s ease; /* Agregar una transición suave al icono */
 }
+
+/* Estilos al pasar el mouse sobre los iconos */
+.icon:hover {
+  transform: scale(1.2); /* Aumentar ligeramente el tamaño del icono al pasar el mouse */
+}
+
+/* Estilos para cambiar el color de los iconos en el hover */
+.icon:hover {
+  color: #007bff; /* Cambiar el color del icono al pasar el mouse */
+}
+
+
 
 /* BUTTONS */
 
@@ -339,6 +502,100 @@ section {
   gap: 4rem;
   height: 80%;
 }
+
+
+
+/* Estilos base para todas las pantallas */
+.section-container-home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50vh;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Ajustar el contenedor de imagen para hacerlo más largo */
+.section__pic-container-home {
+  /* width: 855px; */
+  width: 1300px;
+  margin-left: -60px;
+  margin-right: 80px;
+}
+
+.square-image {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  border-radius: 48px;
+  margin-right: 440px;
+  margin-top: -10px;
+}
+
+.about-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .section-container-home {
+    height: 40vh; /* Reducir la altura para pantallas más pequeñas */
+  }
+
+  .section__pic-container-home {
+    display: none; /* Ocultar el contenedor de imagen en pantallas más pequeñas */
+  }
+
+  .square-image {
+    display: none; /* Ocultar la imagen cuadrada en pantallas más pequeñas */
+  }
+}
+
+
+
+
+
+.text-container {
+  max-width: 100%; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 20px; /* Espacio interno */
+  background-color: #f0f0f0; /* Color de fondo */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Esquinas redondeadas */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  box-sizing: border-box; /* Incluir el borde y el padding en el ancho total */
+}
+
+/* Estilos para el párrafo dentro del contenedor */
+.text-container p {
+  line-height: 1.6; /* Espaciado entre líneas */
+  margin-bottom: 10px; /* Espacio inferior */
+  text-align: justify; /* Justificar el texto */
+}
+
+/* Media query para pantallas de hasta 768px de ancho (por ejemplo, tablets y teléfonos) */
+@media (max-width: 768px) {
+  .text-container {
+    padding: 10px; /* Espacio interno reducido para pantallas pequeñas */
+  }
+
+  /* Otras modificaciones para los párrafos si es necesario */
+  .text-container p {
+    font-size: 16px; /* Tamaño de fuente reducido para pantallas pequeñas */
+  }
+}
+
+
+
+
 
 /* .section__pic-container {
   height: 400px;
@@ -461,4 +718,20 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+
+/* Nueva clase de animación */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-transition {
+  animation: fade-in 1s ease-in-out;
 }

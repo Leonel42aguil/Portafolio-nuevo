@@ -7,21 +7,26 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Portafolio .</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">Acerca de</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="page-container fade-in-transition">
+    <!-- <div class="page-container animate__animated animate__fadeInDown"> -->
+
+      <nav id="desktop-nav">
+        <div class="logo">Portafolio .</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Leonel Aguilera</div>
+      <div class="logo">Portafolio .</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -46,49 +51,66 @@
         <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+          class="btn btn-color-2"
+          onclick="window.open('./assets/resume-example.pdf')"
           >
-            Descargar CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contacto Info
-          </button>
-        </div>
+          Descargar CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contacto Info
+        </button>
+      </div>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/leonelchatard/'"
-          />
-          <img
+            />
+            <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/Leonel42aguil'"
-          />
+            />
+            <img
+            src="./assets/bxl-twitter.svg"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://twitter.com/Leonelchatard'"
+            />
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Conozca más</p>
-      <h1 class="title">Acerca de mí</h1>
-      <div class="section-container">
-        <div class="section__pic-container"">
-          <img
-            src="./assets/Leonel 22.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
+      </section>
+      
+      <br />
+      <br />
+      <br />
+      <br />
+      
+      <section id="about">
+        <!-- <p class="section__text__p1-about">Conozca más</p> -->
+        <h1 class="title-about">Acerca de mí</h1>
+        
+        <!-- Cambiame desde esto-->
+        <div class="section-container-home">
+          <div class="section__pic-container-home"">
+            <div class="square-image">
+              <img
+              src="./assets/Leonel 22.png"
+              alt="Profile picture"
+              class="about-pic"
+              />
+            </div>
+          </div>
+          
+          <div class="about-details-container">
+            <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/education.png"
-                alt="Experience icon"
-                class="icon"
+              src="./assets/education.png"
+              alt="Experience icon"
+              class="icon"
               />
               <h3>Educacion</h3>
               <h3>Francisco Oreglia</h3>
@@ -96,9 +118,9 @@
             </div>
             <div class="details-container">
               <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
               />
               <h3>Educacion</h3>
               <h3>soyHenry <br />Full Stack Developer </h3>
@@ -108,12 +130,7 @@
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              Soy Desarrollador Full Stack. Desde mis inicios, siempre he sido aplicado y dedicado en mi trabajo. Me profundizo en la programación día a día, y crecer cada vez mas es lo que me motiva. La organización y la sincronización son mis aliados para llevar adelante proyectos exitosos. La planificación y la gestión del tiempo son fundamentales para entregar productos de calidad en los plazos establecidos. La honestidad y la sinceridad son pilares fundamentales en todo lo que hago. La transparencia y la ética son esenciales en el desarrollo de relaciones profesionales sólidas y duraderas.
             </p>
           </div>
         </div>
@@ -125,6 +142,15 @@
         onclick="location.href='./#experience'"
       />
     </section>
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
     <section id="experience">
       <p class="section__text__p1">Explorar mi</p>
       <h1 class="title">Experiencia</h1>
@@ -135,9 +161,9 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
                 />
                 <div>
                   <h3>JavaScript</h3>
@@ -146,9 +172,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
                 />
                 <div>
                   <h3>HTML</h3>
@@ -157,9 +183,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
                 />
                 <div>
                   <h3>CSS</h3>
@@ -171,66 +197,66 @@
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
-                />
-                <div>
-                  <h3>Tailwind Css</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
+                  />
+                  <div>
+                    <h3>Tailwind Css</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
-                />
-                <div>
-                  <h3>Redux</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+                  />
+                  <div>
+                    <h3>Redux</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
             </div>
-          </div>
-          <div class="details-container">
+            <div class="details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
                 <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>PostgreSQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
+                  />
+                  <div>
+                    <h3>Node JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
                 />
                 <div>
                   <h3>Express JS</h3>
@@ -239,9 +265,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
                 />
                 <div>
                   <h3>Git</h3>
@@ -250,9 +276,9 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
                 />
                 <div>
                   <h3>Sequelize</h3>
@@ -264,10 +290,10 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
       />
     </section>
     <section id="projects">
@@ -278,128 +304,129 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/dogs 2.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">App Dogs</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Leonel42aguil/AppDogs'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-            <br />
-            <br />
-            <p>La plataforma ofrece explorar la diversidad de razas de perros existentes. Cuenta con un buscador para encontrar razas, tiene filtros combinados que facilitan la búsqueda y un paginado. Además, podes crear nuevas razas. Cada raza cuenta con una info de cada perro. ¡Sumérgete en este fascinante mundo canino y descubre la maravillosa variedad de Dogs!</p>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/clima.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">App Clima</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Leonel42aguil/AppClima'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-            <br />
-            <br />
-            <p>¡Descubre el clima global al instante! Nuestra aplicación te muestra el pronóstico actual de cualquier país o ciudad. Precisa y fácil de usar, ¡descárgala ahora y conéctate con el mundo a través del clima!</p>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Perisferia.png"
-                alt="Project 3"
-                class="project-img"
+              src="./assets/Perisferia.png"
+              alt="Project 3"
+              class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Prerisferia Store !</h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/xavcode/PerisferiaStore'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://perisferia-store.vercel.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-            <br />
-            <br />
-            <p>Descubre una experiencia de compra única en Perisferia. Nuestra plataforma de e-commerce ofrece un carrito de compra eficiente, una vista detallada de productos con filtros avanzados, inicio de sesión seguro y la posibilidad de dejar reseñas. ¡Explora y encuentra tus productos favoritos ahora!</p>
-          </div>
-        </div>
+              class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/xavcode/PerisferiaStore'"
+        >
+        Github
+      </button>
+      <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://perisferia-store.vercel.app/'"
+      >
+      Live Demo
+    </button>
       </div>
+      <br />
+      <br />
+      <p>Descubre una experiencia de compra única en Perisferia. Nuestra plataforma de e-commerce ofrece un carrito de compra eficiente, una vista detallada de productos con filtros avanzados, inicio de sesión seguro y la posibilidad de dejar reseñas. ¡Explora y encuentra tus productos favoritos ahora!</p>
+    </div>
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img
+        src="./assets/dogs 2.jpg"
+        alt="Project 1"
+        class="project-img"
+        />
+      </div>
+      <h2 class="experience-sub-title project-title">App Dogs</h2>
+      <div class="btn-container">
+        <button
+        class="btn btn-color-2 project-btn"
+        onclick="location.href='https://github.com/Leonel42aguil/AppDogs'"
+        >
+        Github
+      </button>
+      <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://github.com/'"
+      >
+      Live Demo
+    </button>
+  </div>
+  <br />
+  <br />
+  <p>La plataforma ofrece explorar la diversidad de razas de perros existentes. Cuenta con un buscador para encontrar razas, tiene filtros combinados que facilitan la búsqueda y un paginado. Además, podes crear nuevas razas. Cada raza cuenta con una info de cada perro. ¡Sumérgete en este fascinante mundo canino y descubre la maravillosa variedad de Dogs!</p>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+    src="./assets/clima.jpg"
+    alt="Project 2"
+    class="project-img"
+    />
+  </div>
+  <h2 class="experience-sub-title project-title">App Clima</h2>
+  <div class="btn-container">
+    <button
+    class="btn btn-color-2 project-btn"
+    onclick="location.href='https://github.com/Leonel42aguil/AppClima'"
+            >
+              Github
+            </button>
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+            >
+            Live Demo
+          </button>
+        </div>
+        <br />
+        <br />
+        <p>¡Descubre el clima global al instante! Nuestra aplicación te muestra el pronóstico actual de cualquier país o ciudad. Precisa y fácil de usar, ¡descárgala ahora y conéctate con el mundo a través del clima!</p>
+      </div>
+    </div>
+  </div>
+  <img
+  src="./assets/arrow.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='./#projects'"
+  />
+</section>
+<section id="contact">
+  <p class="section__text__p1">Ponerse en contacto</p>
+  <h1 class="title">Contactame</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
       <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
+      src="./assets/email.png"
+      alt="Email icon"
+      class="icon contact-icon email-icon"
       />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Ponerse en contacto</p>
-      <h1 class="title">Contactame</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:leonelcarp142nuevo@gmail.com">leonelcarp142nuevo@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/leonelchatard/?profileId=ACoAAD6mq-8B8s8tvyJsTrb-bW8qZwdMdm7gyp4">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">Acerca de</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>&#169; 2023 Leonel Aguilera. Full Stack</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      <p><a href="mailto:leonelcarp142nuevo@gmail.com">leonelcarp142nuevo@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+      src="./assets/linkedin.png"
+      alt="LinkedIn icon"
+      class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/leonelchatard/?profileId=ACoAAD6mq-8B8s8tvyJsTrb-bW8qZwdMdm7gyp4">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>&#169; 2023 Leonel Aguilera. Full Stack</p>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
 </html> 
