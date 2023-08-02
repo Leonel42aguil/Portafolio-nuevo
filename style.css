@@ -282,8 +282,8 @@ section {
   text-align: center;
 }
 
-.title-about {
-  font-size: 2.8rem;
+/* .title-about {
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
@@ -297,7 +297,29 @@ section {
   width: 50px;
   height: 2px;
   margin: 8px auto;
+} */
+
+.title-about {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+  margin-left: 118px; /* Ajusta este valor según tu preferencia */
 }
+
+.title-about::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 8px auto;
+  margin-left: 50px; /* Ajusta este valor según tu preferencia */
+}
+
+
+
 
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
@@ -314,6 +336,16 @@ section {
 
 
 
+.title-proyect {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  /* padding: 10px; */
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
 
 
 /* Estilos para pantallas más grandes */
@@ -328,7 +360,7 @@ section {
   }
 }
 .title-about-proyect {
-  font-size: 2.8rem;
+  font-size: 12.8rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
@@ -443,6 +475,7 @@ section {
 /* ABOUT SECTION */
 #about {
   position: relative;
+  top: -92px
 }
 
 .about-containers {
@@ -500,6 +533,7 @@ section {
   width: 1300px;
   margin-left: -60px;
   margin-right: 80px;
+  /* top: 5110px;  */
 }
 
 .square-image {
@@ -507,26 +541,27 @@ section {
   width: 100%;
   padding-top: 100%;
   overflow: hidden;
-  background-color: #f2f2f2;
+  background-color: #FFFFFF;
   border-radius: 48px;
-  margin-right: 440px;
+  margin-right: 640px;/*modifi*/
   margin-top: -10px;
 }
 
 .about-pic {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 200px;
+  /* left: 140px; */
+  width: 50%; /*modifi*/
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .section-container-home {
-    height: 40vh;
+    height: 20vh;
   }
   .section__pic-container-home {
     display: none;
@@ -541,38 +576,65 @@ section {
   margin: 0 auto;
   padding: 20px;
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
+  transition: font-size 0.3s ease; /* Animación de transición para el cambio de tamaño de fuente */
 }
 
 .text-container p {
-  line-height: 1.6;
-  margin-bottom: 10px;
+  line-height: 1.9;
+  margin-bottom: 20px;
   text-align: justify;
 }
 
 /* Media query para pantallas de hasta 768px de ancho (por ejemplo, tablets y teléfonos) */
 @media (max-width: 768px) {
   .text-container {
-    padding: 10px;
+    padding: 5px;
   }
   .text-container p {
     font-size: 16px;
   }
 }
 
+/* Animación al pasar el cursor sobre .text-container */
+.text-container:hover {
+  /* font-size: 23px;  */
+  font-size: 22px;  
+}
+
+
+
+
+
+/*asdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
 /* EXPERIENCE SECTION */
 #experience {
   position: relative;
 }
+
+@media screen and (max-width: 768px) {
+  #experience {
+    top: 105px; /* Mueve el contenido 50 píxeles hacia abajo en pantallas con ancho máximo de 768 píxeles */
+  }
+}
+
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
+}
+
+.experience-details-container-proyect {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -125px;
 }
 
 .experience-details-container {
@@ -611,7 +673,7 @@ section {
 }
 
 .project-img:hover {
-  transform: scale(1.2); 
+  transform: scale(1.1); 
 }
 
 /* CSS para tamaños de pantalla mayores o iguales a 768px */
