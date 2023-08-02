@@ -95,18 +95,26 @@
       
       <section id="about">
         <!-- <p class="section__text__p1-about">Conozca más</p> -->
-        <h1 class="title-about">Sobre mi</h1>
+        <h1 class="title-about">Sobre mi...</h1>
         
         <!-- Cambiame desde esto-->
         <div class="section-container-home">
           <div class="section__pic-container-home"">
-            <div class="square-image">
+            <div class="square-image" onmouseover="changeImage()" onmouseout="restoreImage()">
               <!-- src="./assets/photo - edit.jpg"  -->
               <img
               src="./assets/serio - edit.jpg" 
               alt="Profile picture"
-              class="about-pic"
+              class="about-pic img1"
               />
+              <!-- class="about-pic" -->
+
+              <img
+             src="./assets/photo - edit.jpg" 
+             alt="Alternate profile picture"
+             class="about-pic img2"
+             />
+             <!-- class="about-pic img2" -->
             </div>
           </div>
           
@@ -416,7 +424,7 @@
   src="./assets/arrow.png"
   alt="Arrow icon"
   class="icon arrow"
-  onclick="location.href='./#contact'"
+  onclick="location.href='./#contact'" 
   />
 </section>
 <br />
