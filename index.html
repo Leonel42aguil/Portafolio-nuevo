@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
   </head>
   <body>
     <div class="page-container fade-in-transition">
@@ -20,7 +22,7 @@
         <div class="logo">Portafolio .</div>
         <div>
           <ul class="nav-links">
-            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#about">Sobre mi</a></li>
             <li><a href="#experience">Skills</a></li>
             <li><a href="#projects">Proyectos</a></li>
             <li><a href="#contact">Contacto</a></li>
@@ -36,7 +38,7 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Acerca de</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Sobre mi</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
@@ -93,7 +95,7 @@
       
       <section id="about">
         <!-- <p class="section__text__p1-about">Conozca más</p> -->
-        <h1 class="title-about">Acerca de mí</h1>
+        <h1 class="title-about">Sobre mi</h1>
         
         <!-- Cambiame desde esto-->
         <div class="section-container-home">
@@ -316,13 +318,13 @@
     <br />
     <br />
     <br />
-    <br />
-    <br />
-    <!-- title-proyect          -->
+
     <section id="projects">
       <p class="title-proyect">Explorar mis recientes</p>
       <h1 class="title-about-proyect">Proyectos</h1>
-      <p class="section__text__p1">Explorar mis recientes</p>
+      <br />
+      <br />
+      <br />
       <div class="experience-details-container-proyect">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -341,7 +343,7 @@
             <div class="btn-container">
               <button
               class="btn btn-color-2 project-btn"
-          onclick="location.href='https://github.com/xavcode/PerisferiaStore'"
+              onclick="window.open('https://github.com/xavcode/PerisferiaStore')"
         >
         Github
       </button>
@@ -366,13 +368,13 @@
       <div class="btn-container">
         <button
         class="btn btn-color-2 project-btn"
-        onclick="location.href='https://github.com/Leonel42aguil/AppDogs'"
+        onclick="window.open('https://github.com/Leonel42aguil/App-Dogs')"
         >
         Github
       </button>
       <button
       class="btn btn-color-2 project-btn"
-      onclick="location.href='https://github.com/'"
+      id="demoButton1"
       >
       Live Demo
     </button>
@@ -399,7 +401,7 @@
             </button>
             <button
             class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/'"
+            id="demoButton2"
             >
             Live Demo
           </button>
@@ -417,8 +419,6 @@
   onclick="location.href='./#contact'"
   />
 </section>
-<br />
-<br />
 <br />
 <br />
 <br />
@@ -452,7 +452,7 @@
   <nav>
     <div class="nav-links-container">
       <ul class="nav-links">
-        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#about">Sobre mi</a></li>
         <li><a href="#experience">Skills</a></li>
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#contact">Contacto</a></li>
@@ -463,5 +463,40 @@
 </footer>
 </div>
 <script src="script.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+      // Obtener el botón 1 por su ID
+      const demoButton1 = document.getElementById('demoButton1');
+      demoButton1.addEventListener('click', () => {
+        Swal.fire({
+          title: '¡Deploy en desarrollo!',
+          html: '¡El deploy de App Dogs está en proceso!',
+          icon: 'info',
+          timer: 5000, // 5 segundos, la notificación se cerrará automáticamente después de este tiempo
+          timerProgressBar: true, // Muestra una barra de progreso durante el tiempo que dura el timer
+          toast: true, // Activa el modo "toast" para mostrar una notificación discreta
+          position: 'bottom-end', // Ubicación de la notificación en la esquina inferior derecha
+          showConfirmButton: false, // No muestra el botón de confirmación
+        });
+      });
+
+      // Obtener el botón 2 por su ID
+      const demoButton2 = document.getElementById('demoButton2');
+      demoButton2.addEventListener('click', () => {
+        Swal.fire({
+          title: '¡Deploy en desarrollo!',
+          html: '¡El deploy de App Clima está en proceso!',
+          icon: 'info',
+          timer: 5000, // 5 segundos, la notificación se cerrará automáticamente después de este tiempo
+          timerProgressBar: true, // Muestra una barra de progreso durante el tiempo que dura el timer
+          toast: true, // Activa el modo "toast" para mostrar una notificación discreta
+          position: 'bottom-end', // Ubicación de la notificación en la esquina inferior derecha
+          showConfirmButton: false, // No muestra el botón de confirmación
+        });
+      });
+    </script>
 </body>
 </html> 

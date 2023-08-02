@@ -325,11 +325,12 @@ section {
 @media screen and (max-width: 768px) {
   .title-about {
     font-size: 3rem;
+    transform: translateX(-50px); /* Ajustar el valor para desplazamiento horizontal */
   }
   .title-about::after {
     width: 30px;
-    height: 121px;
-    margin: 60px auto;
+    height: 23px;
+    margin: 95px auto;
   }
 }
 
@@ -811,4 +812,10 @@ footer p {
 
 .fade-in-transition {
   animation: fade-in 1s ease-in-out;
+}
+
+
+
+.details-container color-container {
+  color: red;
 }
