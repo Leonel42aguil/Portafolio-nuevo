@@ -322,10 +322,10 @@ section {
 
 
 /* Estilos para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .title-about {
-    font-size: 4rem;
-    transform: translateX(-50px); /* Ajustar el valor para desplazamiento horizontal */
+    font-size: 2.3rem;
+    transform: translateX(-112px); 
   }
   .title-about::after {
     width: 30px;
@@ -630,7 +630,7 @@ section {
 
 @media screen and (max-width: 768px) {
   #experience {
-    top: 105px; /* Mueve el contenido 50 píxeles hacia abajo en pantallas con ancho máximo de 768 píxeles */
+    top: 448px; /* Mueve el contenido 50 píxeles hacia abajo en pantallas con ancho máximo de 768 píxeles */
   }
 }
 
@@ -646,8 +646,15 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: -125px;
+  margin-top: -60px;
 }
+
+@media screen and (max-width: 768px) {
+  .experience-details-container-proyect {
+    margin-top: 10px; /* Ajusta el valor según la posición que desees */
+  }
+}
+
 
 .experience-details-container {
   display: flex;
@@ -739,6 +746,13 @@ article .icon {
 /* PROJECTS SECTION */
 #projects {
   position: relative;
+  /* top: 610px; */
+}
+
+@media screen and (max-width: 768px) {
+  #projects {
+    top: 650px; /* Ajusta el valor según la posición que desees */
+  }
 }
 
 .color-container {
@@ -767,7 +781,13 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 83vh;
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    margin-top: 850px; /* Ajusta el valor según la posición que desees */
+  }
 }
 
 .contact-info-upper-container {
