@@ -449,7 +449,7 @@ section {
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .title-about-proyect {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: -10px;
   }
   .title-about-proyect::after {
@@ -600,7 +600,7 @@ section {
 
 @media screen and (max-width: 767px) {
   .about-details-container {
-    margin-top: 300px; /* Ajustar la cantidad de píxeles según tu preferencia */
+    margin-top: 450px; /* Ajustar la cantidad de píxeles según tu preferencia */
   }
 }
 
