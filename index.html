@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+  
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-icons@4.2.0/umd/react-icons.production.min.js"></script>
   </head>
   <body>
     <div class="page-container fade-in-transition">
@@ -39,7 +43,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">Sobre mi</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
         </div>
@@ -183,7 +187,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend </h2>
+            <h2 class="experience-sub-title">Frontend</h2>
             <div class="article-container">
               <article>
                 <img
@@ -193,7 +197,12 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Experiencia</p>
+                  <!-- <p>Experiencia</p> -->
+                  <img
+                  src="./assets/icons8-javascript.svg"
+                  alt="Experience icon"
+                  class="icon"
+                  />
                 </div>
               </article>
               <article>
@@ -204,7 +213,12 @@
                 />
                 <div>
                   <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <!-- <p>Experienced</p> -->
+                  <img
+                  src="./assets/html5-fill.svg"
+                  alt="Experience icon"
+                  class="icon"
+                  />
                 </div>
               </article>
               <article>
@@ -215,7 +229,12 @@
                 />
                 <div>
                   <h3>CSS</h3>
-                  <p>Intermediate</p>
+                  <!-- <p>Intermediate</p> -->
+                  <img
+                  src="./assets/css3-fill.svg"
+                  alt="Experience icon"
+                  class="icon"
+                  />
                 </div>
               </article>
              
@@ -227,17 +246,23 @@
                   />
                   <div>
                     <h3>Tailwind Css</h3>
-                    <p>Basic</p>
+                    <!-- <p>Basic</p> -->
+                    <img
+                    src="./assets/icons8-tailwind-css.svg"
+                    alt="Experience icon"
+                    class="icon"
+                    />
                   </div>
                 </article> <article>
-                <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
+                  <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <!-- <p>Intermediate</p> -->
+                    <img src="/assets/icons8.png" class="icon" />
                 </div>
               </article>
          
@@ -249,7 +274,12 @@
                   />
                   <div>
                     <h3>Redux</h3>
-                    <p>Intermediate</p>
+                    <!-- <p>Intermediate</p> -->
+                    <img
+                    src="./assets/icons8-redux.svg"
+                    alt="Experience icon"
+                    class="icon"
+                    />
                   </div>
                 </article>
               </div>
@@ -265,7 +295,12 @@
                   />
                   <div>
                     <h3>PostgreSQL</h3>
-                    <p>Basic</p>
+                    <!-- <p>Basic</p> -->
+                    <img
+                    src="./assets/postgreSql-svg.svg"
+                    alt="Experience icon"
+                    class="icon"
+                    />
                   </div>
                 </article>
                 <article>
@@ -276,7 +311,12 @@
                   />
                   <div>
                     <h3>Node JS</h3>
-                    <p>Intermediate</p>
+                    <!-- <p>Intermediate</p> -->
+                    <img
+                    src="./assets/node-js-svg.svg"
+                    alt="Experience icon"
+                    class="icon"
+                    />
                   </div>
                 </article>
                 <article>
@@ -287,7 +327,12 @@
                 />
                 <div>
                   <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <!-- <p>Intermediate</p> -->
+                  <img
+                  src="./assets/express-png.svg"
+                  alt="Experience icon"
+                  class="icon"
+                  />
                 </div>
               </article>
               <article>
@@ -298,7 +343,8 @@
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <!-- <p>Intermediate</p> -->
+                  <img src="/assets/git-branch-fill.svg" class="icon" />
                 </div>
               </article>
               <article>
@@ -309,7 +355,12 @@
                 />
                 <div>
                   <h3>Sequelize</h3>
-                  <p>Intermediate</p>
+                  <!-- <p>Intermediate</p> -->
+                  <img
+                  src="./assets/sequelize-seeklogo.com.svg"
+                  alt="Experience icon"
+                  class="icon"
+                  />
                 </div>
               </article>
             </div>
@@ -429,7 +480,7 @@
       <img
       src="./assets/email.png"
       alt="Email icon"
-      class="icon contact-icon email-icon"
+      class="icon-contacto"
       />
       <p><a href="mailto:leonelcarp142nuevo@gmail.com">leonelcarp142nuevo@gmail.com</a></p>
     </div>
@@ -437,7 +488,7 @@
       <img
       src="./assets/linkedin.png"
       alt="LinkedIn icon"
-      class="icon contact-icon"
+      class="icon-contacto"
       />
       <p><a href="https://www.linkedin.com/in/leonelchatard/?profileId=ACoAAD6mq-8B8s8tvyJsTrb-bW8qZwdMdm7gyp4">LinkedIn</a></p>
     </div>
@@ -493,5 +544,21 @@
         });
       });
     </script>
+
+
+
+
+<script>
+  const { FaReact } = ReactIcons; // Importa el ícono que deseas utilizar (en este caso, el ícono de React)
+  const App = () => {
+      return (
+          <div>
+              <h1>Icono de React:</h1>
+              <FaReact size={50} />
+          </div>
+      );
+  };
+  ReactDOM.render(<App />, document.getElementById('root'));
+</script>
 </body>
 </html> 
