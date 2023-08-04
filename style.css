@@ -548,6 +548,14 @@ section {
   top: 144px
 }
 
+@media screen and (max-width: 768px) {
+  #about {
+    /* position: relative; */
+    top: 110px;
+  }
+}
+
+
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -700,7 +708,7 @@ section {
 
 @media screen and (max-width: 768px) {
   #experience {
-    top: 650px; /* Mueve el contenido 50 píxeles hacia abajo en pantallas con ancho máximo de 768 píxeles */
+    top: 655px; /* Mueve el contenido 50 píxeles hacia abajo en pantallas con ancho máximo de 768 píxeles */
   }
 }
 
@@ -821,7 +829,7 @@ article .icon {
 
 @media screen and (max-width: 768px) {
   #projects {
-    top: 825px; /* Ajusta el valor según la posición que desees */
+    top: 925px; /* Ajusta el valor según la posición que desees */
   }
 }
 
@@ -857,7 +865,7 @@ article .icon {
 
 @media screen and (max-width: 768px) {
   #contact {
-    margin-top: 1010px; /* Ajusta el valor según la posición que desees */
+    margin-top: 1110px; /* Ajusta el valor según la posición que desees */
   }
 }
 
