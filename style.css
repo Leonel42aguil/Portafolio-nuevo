@@ -642,7 +642,7 @@ section {
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .section-container-home {
-    height: 20vh;
+    height: 40vh;
   }
   .section__pic-container-home {
     display: none;
