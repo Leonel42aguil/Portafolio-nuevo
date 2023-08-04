@@ -745,7 +745,7 @@ section {
 
 @media screen and (max-width: 768px) {
   #experience {
-    top: 705px; /* Mueve el contenido 50 píxeles hacia abajo en pantallas con ancho máximo de 768 píxeles */
+    top: 731px; /* Mueve el contenido 50 píxeles hacia abajo en pantallas con ancho máximo de 768 píxeles */
   }
 }
 
