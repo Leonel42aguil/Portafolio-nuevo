@@ -421,7 +421,7 @@ section {
 /* Estilos para pantallas más grandes */
 @media screen and (min-width: 1200px) {
   .title-about-proyect {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
   .title-about::after {
     width: 70px;
@@ -430,7 +430,7 @@ section {
   }
 }
 .title-about-proyect {
-  font-size: 12.8rem;
+  font-size: 8.4rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
@@ -449,7 +449,8 @@ section {
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .title-about-proyect {
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: -10px;
   }
   .title-about-proyect::after {
     width: 30px;
@@ -595,6 +596,12 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .about-details-container {
+    margin-top: 300px; /* Ajustar la cantidad de píxeles según tu preferencia */
+  }
 }
 
 .about-containers,
@@ -794,16 +801,29 @@ section {
   transform: scale(1.1); 
 }
 
+@media screen and (max-width: 767px) {
+  .project-img {
+    max-height: 300px; /* Ajusta el tamaño para dispositivos móviles */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .project-img {
+    max-height: 300px; /* Ajusta el tamaño para tabletas en posición vertical */
+  }
+}
+
+
 /* CSS para tamaños de pantalla mayores o iguales a 768px */
 @media screen and (min-width: 768px) {
   .article-container {
     justify-content: space-around;
   }
 
-  .project-img {
+  /* .project-img {
     width: 500px;
     height: 400px;
-  }
+  } */
 }
 
 /* CSS para tamaños de pantalla menores a 768px */
@@ -812,10 +832,10 @@ section {
     justify-content: center;
   }
 
-  .project-img {
+  /* .project-img {
     width: 100%;
     height: auto;
-  }
+  } */
 }
 
 /* Opcionalmente, puedes agregar una regla adicional para tamaños de pantalla menores a 576px */
