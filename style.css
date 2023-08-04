@@ -63,7 +63,7 @@ a:hover {
   color: #333;
   position: relative;
   bottom: 45px;
-  right: 60px;
+  right: 35px;
 }
 
 .logo:hover {
@@ -545,7 +545,7 @@ section {
 /* ABOUT SECTION */
 #about {
   position: relative;
-  top: -92px
+  top: 144px
 }
 
 .about-containers {
@@ -695,11 +695,12 @@ section {
 /* EXPERIENCE SECTION */
 #experience {
   position: relative;
+  top: 400px;
 }
 
 @media screen and (max-width: 768px) {
   #experience {
-    top: 448px; /* Mueve el contenido 50 píxeles hacia abajo en pantallas con ancho máximo de 768 píxeles */
+    top: 650px; /* Mueve el contenido 50 píxeles hacia abajo en pantallas con ancho máximo de 768 píxeles */
   }
 }
 
@@ -815,12 +816,12 @@ article .icon {
 /* PROJECTS SECTION */
 #projects {
   position: relative;
-  /* top: 610px; */
+  top: 650px;
 }
 
 @media screen and (max-width: 768px) {
   #projects {
-    top: 650px; /* Ajusta el valor según la posición que desees */
+    top: 825px; /* Ajusta el valor según la posición que desees */
   }
 }
 
@@ -851,11 +852,12 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 83vh;
+  margin-top: 822px;
 }
 
 @media screen and (max-width: 768px) {
   #contact {
-    margin-top: 850px; /* Ajusta el valor según la posición que desees */
+    margin-top: 1010px; /* Ajusta el valor según la posición que desees */
   }
 }
 
