@@ -4,10 +4,15 @@
 * {
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box; /* Agregue el tamaño de la caja para manejar el relleno y el borde correctamente */
+
 }
 
 body {
   font-family: "Poppins", sans-serif;
+
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 html {
@@ -576,7 +581,7 @@ section {
 /* ABOUT SECTION */
 #about {
   position: relative;
-  top: 144px
+  top: 144px;
 }
 
 @media screen and (max-width: 768px) {
@@ -991,3 +996,7 @@ footer p {
 .details-container color-container {
   color: red;
 }
+
+
+
+
