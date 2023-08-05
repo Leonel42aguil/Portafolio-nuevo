@@ -12,7 +12,7 @@
 body {
   font-family: "Poppins", sans-serif;
 
-  overflow-x: hidden; /* Prevent horizontal scroll */
+   overflow-x: hidden; /* Evitar el desplazamiento horizontal */
 }
 
 html {
@@ -187,11 +187,16 @@ section {
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+
+  /* min-height: fit-content; Cambioo COMENTADO */
 }
 
 .section-container {
   display: flex;
+
+  flex-direction: column; /* Cambiar a columna para un diseño responsivo */
+  align-items: center; /* Centrar contenido horizontalmente */
+  gap: 2rem; /* Agregar espacio entre elementos */
 }
 
 /* PROFILE SECTION */
@@ -766,7 +771,11 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: -60px;
+  /* margin-top: -60px; */
+
+  align-items: center;
+  gap: 3rem;
+  margin-top: 0; /* Eliminar valores de margen innecesarios */
 }
 
 @media screen and (max-width: 768px) {
@@ -784,11 +793,12 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
+  justify-content: center; /* Centrar elementos horizontalmente */
   flex-wrap: wrap;
+  /* text-align: initial; */
   flex-direction: row;
   gap: 3.2rem;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .project-img {
@@ -999,4 +1009,33 @@ footer p {
 
 
 
+/* Media Queries para un Diseño Responsivo */
+
+/* Dispositivos pequeños (teléfonos en modo apaisado, 576px y más) */
+@media (min-width: 576px) {
+  section {
+    margin: 0 2rem; /* Ajustar márgenes para pantallas más pequeñas */
+  }
+}
+
+/* Dispositivos medianos (tabletas, 768px y más) */
+@media (min-width: 768px) {
+  section {
+    margin: 0 5rem; /* Ajustar márgenes para tabletas */
+  }
+}
+
+/* Dispositivos grandes (escritorios, 992px y más) */
+@media (min-width: 992px) {
+  section {
+    margin: 0 8rem; /* Ajustar márgenes para pantallas más grandes */
+  }
+}
+
+/* Dispositivos extra grandes (escritorios grandes, 1200px y más) */
+@media (min-width: 1200px) {
+  section {
+    margin: 0 10rem; /* Mantener el margen original para pantallas extra grandes */
+  }
+}
 
