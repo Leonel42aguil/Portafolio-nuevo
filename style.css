@@ -606,6 +606,7 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  margin-top: 210px;
 }
 
 @media screen and (max-width: 767px) {
@@ -716,12 +717,12 @@ section {
   border-radius: 5px;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
-  transition: font-size 0.3s ease; /* Animación de transición para el cambio de tamaño de fuente */
+  transition: font-size 0.5s ease; /* Animación de transición para el cambio de tamaño de fuente */
 }
 
 .text-container p {
   line-height: 1.9;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: justify;
 }
 
@@ -771,11 +772,10 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* margin-top: -60px; */
+  margin-top: -60px;
 
   align-items: center;
   gap: 3rem;
-  margin-top: 0; /* Eliminar valores de margen innecesarios */
 }
 
 @media screen and (max-width: 768px) {
@@ -1011,7 +1011,6 @@ footer p {
 
 /* Media Queries para un Diseño Responsivo */
 
-/* Dispositivos pequeños (teléfonos en modo apaisado, 576px y más) */
 @media (min-width: 576px) {
   section {
     margin: 0 2rem; /* Ajustar márgenes para pantallas más pequeñas */
