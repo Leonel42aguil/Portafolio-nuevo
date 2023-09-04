@@ -498,8 +498,7 @@ section {
   width: 65px; 
   height: 65px; 
   transition: taransform 0.6s ease; 
-  /* cursor: pointer; */
-  /* height: 2rem; */
+  cursor: pointer;
 }
 
 .icon:hover {
@@ -1036,5 +1035,14 @@ footer p {
   section {
     margin: 0 10rem; /* Mantener el margen original para pantallas extra grandes */
   }
+}
+
+.btn-color-2 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn-color-2 a:hover {
+  color: #ffffff; 
 }
 
